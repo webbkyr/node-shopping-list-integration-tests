@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: FoNr3uaXtdZvloJfydZKhdzmeTW94c1vHewB3b3SPww5ab4TvmWYO5jAkIOXsgkIxjkJ53eWzTRSn4dyCE8OJd6TlLjeabCORJTTyGN43gi8o+FzzQy8jdcZ8J6LBBbYAL/yOtVzYi1/g4v7IJUSEt3CgCJFlQXuE+FgtXdiZjYHerQka2awZ4W0O/cXfslKM1HLzYueMGMwZEFus2XoA3nut39uKWunTP04uOiPF3X1fNfxpfFe+CtVY1+pB8AEliD7LeXAsbatMq1B8iZo36U/EzdEaQHzDIavQFK/A2q4oMoUpIgQo8gvGmMpxAsBZ+4bmgR12kQXK3DCuYd4SdqYVNL0P8hMQasbLEd8khm9izySYn7rLyDRR1MtVcvClIAR/O1u86YKRbbzjkVVBFfRfGxqJZpgmsPB/CHWJ6CZxikiFUjAS1Vy9ZYpH+EclWhkE1I7Dae2DF+e20dE4QX+1YOL5+hh6xYMoBJes4DGAskgG+FvNe6TbBzGtjwy2Tt2bSKAJrq3T4fhfjOCXONbA7X+slJbOFDw51novXMxCe5McaJP41uYcdylGVJAG1IdCwWTBTXkA3SlSn265Qs8xp913o1hUMjn9oYf1nkOSseQe/GNUy69ocC7NlPdv2wEu+MoVVFPvCPe7TKHmffGF3HnVCmWbVR16xXrHsI=
+  app: https://agile-forest-89663.herokuapp.com/
+  on:
+    repo: webbkyr/node-shopping-list-integration-tests
+    branch: tests-for-recipes
